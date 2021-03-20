@@ -5,7 +5,7 @@ export default function Blog({ posts }) {
   return (
     <div>
       <ul>
-        {posts.map(post => (
+        {posts.map((post:any) => (
           <li key={post.id}>
             <Link href={`blog/${post.id}`}>
               <a>{post.title}</a>
